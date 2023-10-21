@@ -1,0 +1,38 @@
+Difference between HTTP1.1 VS HTTP2
+
+HTTP INTRODUCTION:
+
+	. HTTP stands for hypertext transfer protocol and it is the basis for almost all web applications. 
+	. More specifically, HTTP is the method which computers and servers use to request and send information.        
+	. The first usable version of HTTP was created in 1997.
+	. Because it went through several stages of development, this first version of HTTP was called HTTP1.1. 
+	. This version is still in use on the web. In 2015, a new version of HTTP called HTTP2 was created. 
+	. HTTP2 solves several problems and it is much faster and more efficient than HTTP1.1.
+ 	. One of the way in HTTP2 is faster and it prioritizes content during the loading process.
+
+THE DIFFERENCE BETWEEN HTTP1.1 Vs HTTP2
+
+HTTP1:	  			
+	. HTTP1.1 works on the textual format.
+        . In HTTP1.1 a request sent to the server means it responds as a resource .html page.
+ 	. Before sending the request and the response there is a TCP connection established between client and the server.
+        . HTTP1.1 loads resources one after the other, it blocks all the other resources behind it.  
+        . The first problem is HTTP1.1 transfer all the requests & responses in the plain text message form. 
+	. The second one is head of line blocking in which TCP connection is blocked all other requests until the response does 
+           not receive. 
+        . All the information related to the header file is repeated in every request. 
+	
+
+HTTP2:
+        . HTTP2 was developed over the SPDY protocol. 
+	. It works on the binary protocol.
+	. It allows multiplexing so one TCP connection is required for multiple requests.
+	. It uses PUSH frame by server that collects all multiple pages without the request of the client.
+	. It uses HPACK for data compression.
+
+Conclusion:
+	. HTTP is used in client-server communication. 
+	. By using HTTP user sends the request to the server & the server sends the response to the user.  
+	. The difference between them is the loading of the page faster and 
+           prioritizing web performance in an order and also giving response in the intermission request too without latency.  
+	
